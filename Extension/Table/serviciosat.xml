@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table>
+    <column>
+        <name>totalitems</name>
+        <type>integer</type>
+    </column>
+    <column>
+        <name>correctitems</name>
+        <type>integer</type>
+    </column>
+    <column>
+        <name>wrongitems</name>
+        <type>integer</type>
+    </column>
+</table>

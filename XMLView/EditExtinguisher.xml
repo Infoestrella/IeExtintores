@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view>
+    <columns>
+        <group name="basic" numcolumns="12">
+            <column name="reference">
+                <widget type="autocomplete" fieldname="referencia">
+                    <values source="variantes" fieldcode="referencia" fieldtitle="referencia" />
+                </widget>
+            </column>
+            <column name="serial-number" order="110">
+                <widget type="text" fieldname="serialnumber"/>
+            </column>
+            <column name="manufacture-date" order="120">
+                <widget type="date" fieldname="manufacturedate"/>
+            </column>
+            <column name="lastreview-date" order="130">
+                <widget type="date" fieldname="lastreviewdate"/>
+            </column>
+            <column name="laststamp-date" order="140">
+                <widget type="date" fieldname="laststampdate"/>
+            </column>
+        </group>
+    </columns>
+</view>

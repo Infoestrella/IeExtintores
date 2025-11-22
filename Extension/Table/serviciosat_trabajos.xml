@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<table>
+    <column>
+        <name>idextinguisher</name>
+        <type>integer</type>
+    </column>
+    <column>
+        <name>lastreviewdate</name>
+        <type>date</type>
+    </column>
+    <column>
+        <name>laststampdate</name>
+        <type>date</type>
+    </column>
+    <column>
+        <name>manufacturedate</name>
+        <type>date</type>
+    </column>
+    <column>
+        <name>operation</name>
+        <type>text</type>
+    </column>
+    <column>
+        <name>verification</name>
+        <type>boolean</type>
+    </column>
+    <constraint>
+        <name>ca_serviciosat_trabajos_extinguishers</name>
+        <type>FOREIGN KEY (idextintor) REFERENCES extinguishers (id) ON DELETE CASCADE ON UPDATE CASCADE</type>
+    </constraint>
+</table>
