@@ -5,10 +5,6 @@
         <type>serial</type>
     </column>
     <column>
-        <name>lastreviewdate</name>
-        <type>date</type>
-    </column>
-    <column>
         <name>laststampdate</name>
         <type>date</type>
     </column>

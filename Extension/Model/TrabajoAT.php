@@ -17,7 +17,6 @@ class TrabajoAT
             ];
             
             if ($extinguisher->loadWhere($where)) {
-                $this->lastreviewdate = $extinguisher->lastreviewdate;
                 $this->laststampdate = $extinguisher->laststampdate;
                 $this->manufacturedate = $extinguisher->manufacturedate;
             }

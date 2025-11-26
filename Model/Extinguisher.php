@@ -11,7 +11,6 @@ class Extinguisher extends ModelClass
 
     public $id;
     public $idproducto;
-    public $lastreviewdate;
     public $laststampdate;
     public $manufacturedate;
     public $referencia;
