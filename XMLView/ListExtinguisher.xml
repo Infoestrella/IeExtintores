@@ -10,10 +10,7 @@
         <column name="manufacture-date" order="120">
             <widget type="date" fieldname="manufacturedate"/>
         </column>
-        <column name="lastreview-date" order="130">
-            <widget type="date" fieldname="lastreviewdate"/>
-        </column>
-        <column name="laststamp-date" order="140">
+        <column name="laststamp-date" order="150">
             <widget type="date" fieldname="laststampdate"/>
         </column>
     </columns>

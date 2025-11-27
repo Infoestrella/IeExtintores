@@ -1,4 +1,8 @@
 {
+    "extinguisher": "Extintor",
+    "extinguishers": "Extintores",
+    "laststamp-date": "Fecha último retimbrado",
+    "manufacture-date": "Fecha fabricación",
     "service": "Certificado",
     "services": "Certificados",
     "work": "Informe",
