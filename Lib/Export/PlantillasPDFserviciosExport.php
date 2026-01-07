@@ -45,6 +45,12 @@ class PlantillasPDFserviciosExport extends ParentClass
             es detallada a continuación...
             </p>';
 
+        $html .= '<p style="margin-top:0;">Las operaciones realizadas son las exigidas por el Reglamento de Instalaciones de Protección Contra 
+            Incendios, según el Real Decreto 513/2017 RIPCI, y la ITC-MIE-AP5 de los Extintores de la instalación del cliente. La garantía de 
+            la revisión tiene 1 año de validez, contado a partir de la fecha de emisión de  este certificado. La empresa SEGURIDAD CONTRA 
+            INCENDIOS, S.C, certifica el funcionamiento de los elementos revisados durante el periodo de garantía, salvo si son manipulados 
+            por personal ajeno a nuestra empresa.</p>';
+
         $this->template->writeHTML($html);
 
         $headers = [
@@ -114,6 +120,14 @@ class PlantillasPDFserviciosExport extends ParentClass
             J:Adecuación, K: Etiqueta cumplimentada</p>';
 
         $html .= '<p style="margin-top:0;"><strong>Resultado comprobaciones:</strong> V: Correcto, X: Incorrecto, -: No aplica </p>';
+
+        $html .= '<p style="margin-top:0;">NORMATIVA APLICABLE: <br></p><ul>
+            <li>RIPCI:  Reglamento de instalaciones de protección contra incendios ( Real Decreto 513/2017 y modificaciones posteriores).</li>
+            <li>UNE 23120: Mantenimiento de extintores de incendios.</li>
+            <li>UNE 23033-1: Seguridad contra incendios. Señalización.</li>
+            <li>REP: Reglamento de equipos a presión ( Real Decreto 2060/2008 y modificaciones posteriores).</li>
+            <li>CTE-DB SI: Código técnico de la Edificación- Documento básico de seguridad en caso de incendio ( Real Decreto 314/2006 y modificaciones</p></li>
+            </ul>';
 
         $this->template->writeHTML($html);
 
