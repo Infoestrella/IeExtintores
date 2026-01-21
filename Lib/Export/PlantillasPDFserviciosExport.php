@@ -23,6 +23,7 @@ class PlantillasPDFserviciosExport extends ParentClass
 
         $this->headerText();
         $this->serviceData($model, $columns);
+        $this->observationData($model);
         $this->workData($model);
         $this->footerText();
         $this->footerData($model);

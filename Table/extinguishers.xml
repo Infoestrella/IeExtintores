@@ -30,4 +30,8 @@
         <name>ca_extinguishers_variantes</name>
         <type>FOREIGN KEY (referencia) REFERENCES variantes (referencia) ON DELETE CASCADE ON UPDATE CASCADE</type>
     </constraint>
+    <constraint>
+        <name>extinguishers_unique</name>
+        <type>UNIQUE (serialnumber)</type>
+    </constraint>
 </table>

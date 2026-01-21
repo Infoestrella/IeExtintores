@@ -17,6 +17,11 @@ class ListExtinguisher extends ListController
 
     protected function createViews(string $viewName = 'ListExtinguisher')
     {
-        $this->addView($viewName, 'Extinguisher');
+        $this->addView($viewName, 'Extinguisher')
+            ->addSearchFields(['serialnumber'])
+            ->addFilterPeriod('manufacturedate', 'manufacture-date', 'manufacturedate')
+            ->addFilterPeriod('laststampdate', 'laststamp-date', 'laststampdate');
+
+        $this->addFilterAutocomplete($viewName, 'variante', 'reference', 'referencia', 'variantes', 'referencia', 'referencia');
     }
 }
