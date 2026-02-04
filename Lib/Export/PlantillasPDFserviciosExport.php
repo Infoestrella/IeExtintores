@@ -36,7 +36,7 @@ class PlantillasPDFserviciosExport extends ParentClass
 
         $html .= '<p style="margin-top:0;">La empresa SEGURIDAD CONTRA INCENDIO, S.C, empresa de seguridad inscrita en el Registro
             de Empresas Instaladoras y Mantenedoras de Sistemas de Protección Contra Incendios, y Recargadora de Extintores con 
-            número DR-437-J06203178 y con CIF: J-06203178, ha efectuado con fecha 3 de Julio 2025 la Revisión Anual del sistema 
+            número DR-437-J06203178 y con CIF: J-06203178, ha efectuado la Revisión Anual del sistema 
             de protección contra incendios al cliente:</p>';
 
         $html .= '<h2 style="text-align:center; margin: 10px 0 5px 0;">CERTIFICA</h2>';
