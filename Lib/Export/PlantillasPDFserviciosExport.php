@@ -68,6 +68,41 @@ class PlantillasPDFserviciosExport extends ParentClass
         $this->addTablePage($headers, $rows, [], '');
     }
 
+    protected function serviceData(ServicioAT $model, array $columns): void
+    {
+        $excludeFields = ['idmaquina', 'idtipo', 'neto', 'codalmacen', 'idprioridad', 'material', 'descripcion', 'solucion', 'observaciones',
+            'nick', 'telefono2', 'hora', 'idestado', 'asignado'];
+
+        if (false === Tools::settings('servicios', 'print_pdf_agent', false)) {
+            $excludeFields[] = 'codagente';
+        }
+
+        if (false === Tools::settings('servicios', 'print_pdf_assigned', false)) {
+            $excludeFields[] = 'asignado';
+        }
+
+        $dataModel = $this->getModelColumnsData($model, $columns);
+        foreach ($excludeFields as $field) {
+            if (isset($dataModel[$field])) {
+                unset($dataModel[$field]);
+            }
+        }
+
+        $subject = $model->getSubject();
+        $tipoidfiscal = empty($subject->tipoidfiscal) ? Tools::trans('cifnif') : $subject->tipoidfiscal;
+        $dataModel[$tipoidfiscal] = [
+            'title' => $tipoidfiscal,
+            'value' => $subject->cifnif,
+        ];
+
+        $dataModel['address'] = [
+            'title' => Tools::trans('address'),
+            'value' => $subject->getDefaultAddress()->direccion,
+        ];
+
+        $this->template->addDualColumnTable($dataModel);
+    }
+
     protected function workData(ServicioAT $model): void
     {
         if (false === Tools::settings('servicios', 'print_pdf_works', false)) {

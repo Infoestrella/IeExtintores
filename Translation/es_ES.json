@@ -1,10 +1,13 @@
 {
+    "correct-items": "Elementos correctos",
     "extinguisher": "Extintor",
     "extinguishers": "Extintores",
     "laststamp-date": "Fecha último retimbrado",
     "manufacture-date": "Fecha fabricación",
     "service": "Certificado",
     "services": "Certificados",
+    "total-items": "Total elementos",
     "work": "Informe",
-    "works": "Informes"
+    "works": "Informes",
+    "wrong-items": "Elementos incorrectos"
 }

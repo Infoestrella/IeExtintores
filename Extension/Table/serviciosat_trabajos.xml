@@ -26,6 +26,6 @@
     </column>
     <constraint>
         <name>ca_serviciosat_trabajos_extinguishers</name>
-        <type>FOREIGN KEY (idextintor) REFERENCES extinguishers (id) ON DELETE CASCADE ON UPDATE CASCADE</type>
+        <type>FOREIGN KEY (idextinguisher) REFERENCES extinguishers (id) ON DELETE CASCADE ON UPDATE CASCADE</type>
     </constraint>
 </table>
