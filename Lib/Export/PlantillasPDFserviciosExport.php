@@ -100,6 +100,11 @@ class PlantillasPDFserviciosExport extends ParentClass
             'value' => $subject->getDefaultAddress()->direccion,
         ];
 
+        $dataModel['city'] = [
+            'title' => Tools::trans('city'),
+            'value' => $subject->getDefaultAddress()->ciudad,
+        ];
+
         $this->template->addDualColumnTable($dataModel);
     }
 
